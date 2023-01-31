@@ -37,9 +37,7 @@
       </else-if>
       <else>
         <names variable="author" suffix=",">
-          <name name-as-sort-order="all" and="text" sort-separator=", " initialize-with="." and="text" delimiter-precedes-last="never" delimiter=", ">
-            <name-part name="family" text-case="uppercase"/>
-          </name>
+          <name text-case="uppercase" name-as-sort-order="all" and="text" sort-separator=", " initialize-with="." delimiter-precedes-last="never" delimiter=", " />
           <label form="short" prefix=" "/>
           <substitute>
             <names variable="editor"/>
@@ -395,7 +393,7 @@
       </group>
     </layout>
   </citation>
-  <bibliography hanging-indent="false">
+  <bibliography hanging-indent="true">
     <sort>
       <key macro="cite-author"/>
       <key macro="year-date"/>
