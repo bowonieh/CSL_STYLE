@@ -37,7 +37,7 @@
       </else-if>
       <else>
         <names variable="author" suffix=",">
-          <name name-as-sort-order="all" and="text" sort-separator=", " text-case="uppercase" initialize-with="." delimiter-precedes-last="never" delimiter=", "/>
+          <name name-as-sort-order="all" and="text" sort-separator=", " initialize-with="." delimiter-precedes-last="never" delimiter=", "/>
           <label form="short" prefix=" "/>
           <substitute>
             <names variable="editor"/>
