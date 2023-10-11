@@ -1154,6 +1154,19 @@
       </if>
     </choose>
   </macro>
+  <macro name="publisher-place">
+    <group delimiter="; ">
+      <choose>
+        <if type="paper-conference">
+          <choose>
+            <if variable="publisher-place" match="any">
+              <text variable="publisher-place"/>
+            </if>
+          </choose>
+        </if>
+      </choose>
+    </group>
+  </macro>
   <macro name="publisher">
     <group delimiter="; ">
       <choose>
@@ -1509,16 +1522,9 @@
               <text macro="title-and-descriptions"/>
               <text macro="container"/>
               <text macro="event"/>
-              
+              <text macro="publisher-place" />
+              <text macro="publisher"/>
             </group>
-            <group delimiter="; ">
-                <choose>
-                      <if match="any" variable="publisher-place" delimiter="; ">
-                        <text variable="publisher-place"/>
-                      </if>
-                </choose>
-            </group>
-            <text macro="publisher"/>
             <text macro="access"/>
             <text macro="publication-history"/>
           </group>
