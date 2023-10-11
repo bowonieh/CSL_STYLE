@@ -1523,10 +1523,10 @@
               <text macro="container"/>
               <text macro="event"/>
             </group>
-            <group delimiter=": ">
+            <group delimiter=": " suffix=": ">
                 <text macro="lokasi" />
             </group>
-            <group delimiter=". ">
+            <group delimiter=". " suffix=". ">
                 <text macro="publisher"/>
             </group>
             <text macro="access"/>
