@@ -1206,6 +1206,8 @@
     </group>
   </macro>
   <macro name="access">
+  <choose>
+    <if type="paper-conference" match="none">
     <choose>
       <if variable="DOI" match="any">
         <text variable="DOI" prefix="https://doi.org/"/>
@@ -1220,12 +1222,15 @@
                 <text term="from"/>
               </group>
             </if>
-            <else-if type="thesis" match="any"/>
+           
           </choose>
           <text variable="URL"/>
         </group>
       </else-if>
     </choose>
+    </if>
+  </choose>
+    
   </macro>
   <macro name="event">
     <choose>
