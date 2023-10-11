@@ -1154,7 +1154,7 @@
       </if>
     </choose>
   </macro>
-  <macro name="publisher-place">
+  <macro name="lokasi">
     <group delimiter="; ">
       <choose>
         <if type="paper-conference">
@@ -1522,7 +1522,7 @@
               <text macro="title-and-descriptions"/>
               <text macro="container"/>
               <text macro="event"/>
-              <text macro="publisher-place" />
+              <text macro="lokasi" />
               <text macro="publisher"/>
             </group>
             <text macro="access"/>
