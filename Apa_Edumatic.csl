@@ -1511,13 +1511,13 @@
               <text macro="event"/>
               <group>
                 <choose>
-                  <if type="paper-conference" match="any">
+                  
                     <choose>
                       <if match="any" variable="publisher-place" delimiter="; ">
                         <text variable="publisher-place"/>
                       </if>
                     </choose>
-                  </if>
+                  
                 </choose>
               </group>
               <text macro="publisher"/>
