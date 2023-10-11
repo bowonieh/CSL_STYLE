@@ -1523,8 +1523,12 @@
               <text macro="container"/>
               <text macro="event"/>
             </group>
-            <text macro="lokasi" />
-            <text macro="publisher"/>
+            <group delimiter=": ">
+                <text macro="lokasi" />
+            </group>
+            <group delimiter=". ">
+                <text macro="publisher"/>
+            </group>
             <text macro="access"/>
             <text macro="publication-history"/>
           </group>
