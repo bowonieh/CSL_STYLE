@@ -1509,17 +1509,16 @@
               <text macro="title-and-descriptions"/>
               <text macro="container"/>
               <text macro="event"/>
-              <group delimiter="; ">
+              
+            </group>
+            <group delimiter="; ">
                 <choose>
-                 
                       <if match="any" variable="publisher-place" delimiter="; ">
                         <text variable="publisher-place"/>
                       </if>
-                    
                 </choose>
-              </group>
-              <text macro="publisher"/>
             </group>
+            <text macro="publisher"/>
             <text macro="access"/>
             <text macro="publication-history"/>
           </group>
