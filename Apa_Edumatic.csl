@@ -1513,8 +1513,8 @@
                 <choose>
                   <if type="paper-conference" match="any">
                     <choose>
-                      <if match="any" variable="event">
-                        <text variable="event-place"/>
+                      <if match="any" variable="locator" delimiter="; ">
+                        <text variable="locator"/>
                       </if>
                     </choose>
                   </if>
